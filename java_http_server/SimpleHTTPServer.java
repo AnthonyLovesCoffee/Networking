@@ -20,6 +20,13 @@ public class SimpleHTTPServer {
                 System.out.println(line);
                 line = reader.readLine();
             }
+
+            // now we want to send a simple HTTP response
+            try (Socket socket = server.accept()) {
+                Date today = new Date();
+                String httpResponse = "HTTP/1.1 200 OK\r\n\r\n" + today;
+                socket.getOutputStream().write(httpResponse.getBytes("UTF-8"));
+            }
         }
     }
 }
