@@ -7,3 +7,4 @@ This repository contains various networking scripts written in Python, demonstra
 - Simple Socket Script (simple_socket.py): A script demonstrating a basic socket connection to a remote server.
 - Simple Server-Client Connection (server_client folder): Scripts for a basic server and client interaction.
 - Chatroom Project (client_to_client_chatroom folder): A multi-client chatroom application using sockets and threading.
+- Data Transmission Simulation (wifi_data_transmission folder): A simulation tool for calculating data transmission time and throughput across various Wi-Fi standards under different protocols and data rates.
